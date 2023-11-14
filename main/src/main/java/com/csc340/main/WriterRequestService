@@ -1,0 +1,16 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class WriterRequestService {
+
+    @Autowired
+    private WriterRequestInterface writerRequestInterface;
+
+    public void saveWriterRequest(String requestType, String requestText) {
+        WriterRequests newWriterRequest = new WriterRequests(requestType, requestText);
+        writerRequestInterface.save(newWriterRequest);
+    }
+
+    // Add more methods based on your business logic
+}
