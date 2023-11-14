@@ -12,5 +12,5 @@ public class WriterRequestService {
         writerRequestInterface.save(newWriterRequest);
     }
 
-    // Add more methods based on your business logic
+    // Add savePhotoRequest next?????
 }
